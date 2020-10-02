@@ -1,7 +1,7 @@
 # README.md Generator
 
 ## Description 
-  
+${description}
 
 
 
@@ -15,13 +15,8 @@
 
 ## Installation
 
-*Steps required to install project and how to get the development environment running:*
-
-To generate your own README, first run `npm install` in order to install the following npm package dependencies as specified in the `package.json`:
   * [`inquirer`](https://www.npmjs.com/package/inquirer) that will prompt you for your inputs from the command line 
   * [`axios`](https://www.npmjs.com/package/axios) to fetch your info from the GitHub API
-
-
 
 
 ## Usage 
@@ -29,7 +24,6 @@ To generate your own README, first run `npm install` in order to install the fol
 *Instructions and examples for use:*
 
 ![Gif demo of README-generator](readme-demo.gif)
-
 
 
 The application then takes your responses and uses `axios` to fetch your GitHub profile from the [GitHub API](https://developer.github.com/v3/), including your GitHub profile picture (avatar) and email.

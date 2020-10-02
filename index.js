@@ -1,26 +1,54 @@
 const fs = require("fs")
-const inq = require("inquirer")
+const inq = require("inquirer");
+const Choices = require("inquirer/lib/objects/choices");
 
 
-// inq.prompt ([
-//     {
-//         type: "input",
-//         message: "Whats your name?",
-//         name: "username"
-//     }
-// ])
+inq.prompt ([
+    {
+        type: "input",
+        message: "What would you like to title this README?",
+        name: "Title"
+    },
+    {
+        type: "input",
+        message: "Please describe this project.",
+        name: "Description"
+    },
+    {
+        type: "input",
+        message: "How is this project installed?",
+        name: "Installation"
+    },
+    {
+        type: "input",
+        message: "Please enter guidelines for people who wish to contribute to this project.",
+        name: "Contribution"
+    },
+    {
+        type: "checkbox",
+        message: "What license do you want to release this software under?",
+        name: "License",
+        choices: ["MIT"]
+    },
+    {
+        type: "input",
+        message: "Enter your GitHub UserName",
+        name: "GitHub"
+    },
+    {
+        type: "input",
+        message: "Please enter your Email address",
+        name: "Email"
+    },
+])
 
 
 // array of questions for user
-const questions = [inq.prompt ([
-    {
-        type: "input",
-        message: "Whats your name?",
-        name: "username"
-    }
-])
+const questions = [
+
 
 ];
+console.log(questions)
 
 // function to write README file
 function writeToFile(fileName, data) {
@@ -37,9 +65,7 @@ init();
 
 // Pseduo code for HW
 // npm init
-// install dependencies - inquirer
 
-// require all dependencies inquirer and fs
 
 // create and array of questions
 
