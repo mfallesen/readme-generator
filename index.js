@@ -1,5 +1,24 @@
+const fs = require("fs")
+const inq = require("inquirer")
+
+
+// inq.prompt ([
+//     {
+//         type: "input",
+//         message: "Whats your name?",
+//         name: "username"
+//     }
+// ])
+
+
 // array of questions for user
-const questions = [
+const questions = [inq.prompt ([
+    {
+        type: "input",
+        message: "Whats your name?",
+        name: "username"
+    }
+])
 
 ];
 
