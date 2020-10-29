@@ -69,15 +69,13 @@ function init() {
     
     ## Installation
     ${response.Installation}
-
-      * [inquirer](https://www.npmjs.com/package/inquirer) that will prompt you for your inputs from the command line 
-    
     
     ## Usage 
     
     *Instructions and examples for use:*
     
     ![Gif demo of README-generator](readme-demo.gif)
+    
     ${response.Usage}
     
     ## License
@@ -101,7 +99,7 @@ function init() {
     Email: ${response.Email} `
 
         console.log(response.Title);
-        writeToFile(`${response.fileName}.md`, markdownTemplate);
+        writeToFile(`${response.FileName}.md`, markdownTemplate);
     })
 
     // Readme file writer
