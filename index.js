@@ -52,51 +52,51 @@ function init() {
         },
     ]).then(function (response) {
         const markdownTemplate = `
-    # ${response.Title}
+# ${response.Title}
 
-    ## Description 
-    ${response.Description}
+## Description 
+${response.Description}
     
     
     
-    ## Table of Contents
-    * [Installation](#installation)
-    * [Usage](#usage)
-    * [License](#license)
-    * [Contributing](#contributing)
-    * [Tests](#tests)
+## Table of Contents
+* [Installation](#installation)
+* [Usage](#usage)
+* [License](#license)
+* [Contributing](#contributing)
+* [Tests](#tests)
       
     
-    ## Installation
-    ${response.Installation}
+## Installation
+${response.Installation}
     
-    ## Usage 
+## Usage 
     
-    *Instructions and examples for use:*
+*Instructions and examples for use:*
     
-    ![Gif demo of README-generator](readme-demo.gif)
+![Gif demo of README-generator](readme-demo.gif)
     
-    ${response.Usage}
+${response.Usage}
     
-    ## License
+## License
     
-    This application is provided under an ${response.License} License.
+This application is provided under an ${response.License} License.
     
-    ---
+---
     
-    ## Contributing
+## Contributing
     
-    ${response.Contribution}
+${response.Contribution}
     
-    ## Tests
+## Tests
     
-    Right now there is no testing enabled
+Right now there is no testing enabled
     
-    ## Questions?
-    Get in touch.
-    GitHub: https://github.com/${response.GitHub}
+## Questions?
+Get in touch.
+GitHub: https://github.com/${response.GitHub}
     
-    Email: ${response.Email} `
+Email: ${response.Email} `
 
         console.log(response.Title);
         writeToFile(`${response.FileName}.md`, markdownTemplate);
